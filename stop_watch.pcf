@@ -1,0 +1,67 @@
+//! **************************************************************************
+// Written by: Map P.68d on Tue Mar 05 17:21:14 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "adj" LOCATE = SITE "T10" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rst" LOCATE = SITE "D9" LEVEL 1;
+COMP "cathode<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "cathode<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "cathode<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "cathode<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "cathode<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "cathode<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "cathode<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "pause" LOCATE = SITE "C4" LEVEL 1;
+COMP "anode<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "anode<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "anode<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "anode<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "select" LOCATE = SITE "T9" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "clk_div/oneHz_counter_25" BEL
+        "clk_div/oneHz_counter_24" BEL "clk_div/oneHz_counter_23" BEL
+        "clk_div/oneHz_counter_22" BEL "clk_div/oneHz_counter_21" BEL
+        "clk_div/oneHz_counter_20" BEL "clk_div/oneHz_counter_19" BEL
+        "clk_div/oneHz_counter_18" BEL "clk_div/oneHz_counter_17" BEL
+        "clk_div/oneHz_counter_16" BEL "clk_div/oneHz_counter_15" BEL
+        "clk_div/oneHz_counter_14" BEL "clk_div/oneHz_counter_13" BEL
+        "clk_div/oneHz_counter_12" BEL "clk_div/oneHz_counter_11" BEL
+        "clk_div/oneHz_counter_10" BEL "clk_div/oneHz_counter_9" BEL
+        "clk_div/oneHz_counter_8" BEL "clk_div/oneHz_counter_7" BEL
+        "clk_div/oneHz_counter_6" BEL "clk_div/oneHz_counter_5" BEL
+        "clk_div/oneHz_counter_4" BEL "clk_div/oneHz_counter_3" BEL
+        "clk_div/oneHz_counter_2" BEL "clk_div/oneHz_counter_1" BEL
+        "clk_div/oneHz_counter_0" BEL "clk_div/blinkHz_counter_23" BEL
+        "clk_div/blinkHz_counter_22" BEL "clk_div/blinkHz_counter_21" BEL
+        "clk_div/blinkHz_counter_20" BEL "clk_div/blinkHz_counter_19" BEL
+        "clk_div/blinkHz_counter_18" BEL "clk_div/blinkHz_counter_17" BEL
+        "clk_div/blinkHz_counter_16" BEL "clk_div/blinkHz_counter_15" BEL
+        "clk_div/blinkHz_counter_14" BEL "clk_div/blinkHz_counter_13" BEL
+        "clk_div/blinkHz_counter_12" BEL "clk_div/blinkHz_counter_11" BEL
+        "clk_div/blinkHz_counter_10" BEL "clk_div/blinkHz_counter_9" BEL
+        "clk_div/blinkHz_counter_8" BEL "clk_div/blinkHz_counter_7" BEL
+        "clk_div/blinkHz_counter_6" BEL "clk_div/blinkHz_counter_5" BEL
+        "clk_div/hundredHz_counter_16" BEL "clk_div/hundredHz_counter_15" BEL
+        "clk_div/hundredHz_counter_14" BEL "clk_div/hundredHz_counter_13" BEL
+        "clk_div/hundredHz_counter_12" BEL "clk_div/hundredHz_counter_11" BEL
+        "clk_div/hundredHz_counter_10" BEL "clk_div/hundredHz_counter_9" BEL
+        "clk_div/hundredHz_counter_8" BEL "clk_div/hundredHz_counter_7" BEL
+        "clk_div/hundredHz_counter_6" BEL "clk_div/hundredHz_counter_5" BEL
+        "clk_div/hundredHz_counter_4" BEL "clk_div/hundredHz_counter_3" BEL
+        "clk_div/twoHz_counter_24" BEL "clk_div/twoHz_counter_23" BEL
+        "clk_div/twoHz_counter_22" BEL "clk_div/twoHz_counter_21" BEL
+        "clk_div/twoHz_counter_20" BEL "clk_div/twoHz_counter_19" BEL
+        "clk_div/twoHz_counter_18" BEL "clk_div/twoHz_counter_17" BEL
+        "clk_div/twoHz_counter_16" BEL "clk_div/twoHz_counter_15" BEL
+        "clk_div/twoHz_counter_14" BEL "clk_div/twoHz_counter_13" BEL
+        "clk_div/twoHz_counter_12" BEL "clk_div/twoHz_counter_11" BEL
+        "clk_div/twoHz_counter_10" BEL "clk_div/twoHz_counter_9" BEL
+        "clk_div/twoHz_counter_8" BEL "clk_div/twoHz_counter_7" BEL
+        "clk_div/twoHz_counter_6" BEL "clk_div/blink_temp" BEL
+        "clk_div/hundred_hz_temp" BEL "clk_div/two_hz_temp" BEL
+        "clk_div/one_hz_temp" BEL "clk_div/oneHz_counter_2_1" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

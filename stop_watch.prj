@@ -1,0 +1,6 @@
+verilog work "seven_segment_display.v"
+verilog work "final_display.v"
+verilog work "debouncing.v"
+verilog work "counter.v"
+verilog work "clock_divider.v"
+verilog work "stop_watch.v"

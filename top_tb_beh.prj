@@ -1,0 +1,7 @@
+verilog work "seven_segment_display.v"
+verilog work "final_display.v"
+verilog work "debouncing.v"
+verilog work "counter.v"
+verilog work "sim_top.v"
+verilog work "top_tb.v"
+verilog work "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"
